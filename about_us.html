@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+
+		}
+
+		/* -- Navigationn Bar CSS */
+		#navbar {
+			display: flex;
+			align-items: center;
+			position: relative;
+			height: 65px;
+		}
+
+		#navbar::before {
+			content: "";
+			background-color: #11303f;
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			z-index: -1;
+			border-bottom: 4px solid #f7c597;
+		}
+
+
+		#logo {
+			margin: 2px 4px;
+			margin-top: 1px;
+			height: auto;
+			padding: 2px 4px;
+			align-items: center;
+			justify-content: center;
+		}
+
+		#logo img {
+
+			width: 60px;
+			margin: 3px 4px;
+			padding: 2px 4px;
+		}
+
+		#navbar ul {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: flex-end;
+			width: 100%;
+		}
+
+		#navbar ul li {
+
+			list-style: none;
+		}
+
+		#navbar ul li a {
+			display: block;
+			text-decoration: none;
+			font-family: Helvetica;
+			font-weight: bold;
+			padding: 3px 5px;
+			margin: 2px 15px;
+			color: #e0fffe;
+			font-size: 1.2rem;
+			border: 2px solid #11303f;
+			border-radius: 15px;
+		}
+
+		#navitem1 {
+			margin-left: 0px;
+		}
+
+
+
+		#navbar ul li a:hover {
+			color: #11303f;
+			background-color: #e0fffe;
+			transform: scale3d(1.04, 1.04, 1);
+			transition-duration: 0.4s;
+
+
+		}
+
+		#logo img:hover {
+
+			cursor: pointer;
+			transform: rotate(-45deg);
+			transition-duration: 0.8s;
+
+		}
+
+		h2 {
+			display: flex;
+			justify-content: center;
+			font-weight: bolder;
+			font-size: 60px;
+			height: 100px;
+			font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+		}
+
+		body {
+			background-color: #f5eae0;
+		}
+
+		.pp {
+			display: flex;
+			justify-content: center;
+		}
+
+		html {
+			box-sizing: border-box;
+		}
+
+		*,
+		*:before,
+		*:after {
+			box-sizing: inherit;
+		}
+
+		.column {
+			float: left;
+			width: 25%;
+			margin-bottom: 16px;
+			padding: 0 8px;
+		}
+
+		@media screen and (max-width: 650px) {
+			.column {
+				width: 100%;
+				display: block;
+			}
+		}
+
+		.card {
+			
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			border: 0.1px solid whitesmoke;
+			border-radius: 5px;
+
+		}
+
+		.card img {
+
+			border: 0.1px solid whitesmoke;
+			border-radius: 5px;
+
+		}
+
+		.container {
+			padding: 0 16px;
+			border: 0.1px solid whitesmoke;
+			border-radius: 20px;
+
+		}
+
+		.container::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+
+		.title {
+			color: grey;
+		}
+
+		.footer {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: fixed;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: 50px;
+			background-color: #11303f;
+			color: #e0fffe;
+			text-align: center;
+			border-top: 4px solid #f7c597;
+			margin-bottom: 0;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="navbar">
+		<div id="logo">
+			<img src="image/Logo.png" alt="LaPizzeria.com">
+		</div>
+
+		<ul>
+
+			<li id="navitem1" class="navitem"><a href="project.html">Home</a></li>
+			<li id="navitem2" class="navitem"><a href="menu.html">Menu</a></li>
+			<li id="navitem3" class="navitem"><a href="about_us.html">About Us</a></li>
+			<li id="navitem4" class="navitem"><a href="#">Contact Us</a></li>
+		</ul>
+
+
+	</div>
+
+	<h2>About Us</h2>
+	<p class="pp">Creators Of This Website.</p>
+	<br>
+
+	<div class="row">
+		<div class="column">
+			<div class="card">
+				<img src="image/rohit.jpeg" alt="Rohit Kumar" style="width:100%">
+				<div class="container">
+					<h3>Rohit Kumar</h3>
+					<p class="title">Group Leader</p>
+					<p>Created Front-End And Also Contributed In Backend.</p>
+					<p>rohitkumar.paswan@icloud.com</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="column">
+			<div class="card">
+				<img src="image/rajiv.jpeg" alt="Rajiv Paul" style="width:100%">
+				<div class="container">
+					<h3>Rajiv Paul</h3>
+					<p class="title">Group Member</p>
+					<p>Created Database & Table for Backend</p>
+					<p>rajivpaul941@gmail.com</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="column">
+			<div class="card">
+				<img src="image/harshit.jpeg" alt="Harshit Joshi" style="width:100%">
+				<div class="container">
+					<h3>Harshit Joshi</h3>
+					<p class="title">Group Member</p>
+					<p>Linked Database with HTML Website</p>
+					<p>harshitjoshi67396@gmail.com</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="column">
+		<div class="card">
+			<img src="image/mudit.jpeg" alt="Mudit Arya" style="width:100%">
+			<div class="container">
+				<h3>Mudit Arya</h3>
+				<p class="title">Group Member</p>
+				<p>created and implimented php code for Backend and also designed Report for external</p>
+				<p>muditarya66@gmail.com< </div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<p>2021 La Pizzeria All Copyrigh Reserved &copy;</p>
+	</div>
+
+</body>
+
+</html>
